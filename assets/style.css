@@ -8,7 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8%;
+  padding: 5%;
   background-color: #13293d;
   color: #53d5f2;
 }
@@ -46,35 +46,38 @@ main {
   margin: 2% auto;
 }
 
-article {
-  border-bottom: 1px solid #13293d;
-}
-
-article p {
-  margin: 2% 0;
-  font-size: 110%;
-}
-
-article ul {
-  margin-left: 5%;
-  font-size: 110%;
-  list-style: circle;
-}
-
-footer {
+.products {
+ flex: 4;
+  background-color: aqua;
+  padding: 50px;
   display: flex;
-  justify-content: center;
-  padding: 2%;
-  background-color: #13293d;
-  color: #fff;
+  flex-wrap: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-@media screen and (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
+.card{
+background-color: chartreuse;
+border-style: solid;
+border-width: 15px;
+border-radius: 0px 35px 0px 35px;
+transform: scale(1,1);
+padding: 15px;
+margin: 50px;
+flex: 0 0 300px;
+text-align: center;
+font-size: 20px;
+}
 
-  main {
-    max-width: 1200px;
-  }
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.resize {
+  width: 150px;
+  height: auto;
 }
